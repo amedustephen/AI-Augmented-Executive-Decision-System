@@ -87,10 +87,10 @@ Each page answers a single executive question.
 
 ---
 
-### Executive Command Center  
+### Executive Summary  
 **What is happening right now?**
 
-![Executive Command Center](images/executive_command_center.png)
+![Executive Summary](/images/01_executive_dashboard.png)
 
 - Revenue, Profit, Margin, Orders
 - Budget vs Actual
@@ -99,65 +99,77 @@ Each page answers a single executive question.
 
 ---
 
-### Performance vs Plan  
-**Where are we missing or beating expectations?**
+### Regional Performance  
+**Where should leadership focus geographically?**
 
-![Performance vs Plan](images/performance_vs_plan.png)
+![Regional Performance](/images/02_regional_performance.png)
 
-- Category-level variance
-- Time-based budget analysis
-- Variance waterfall
-- Financial accountability view
+- Revenue by region map
+- Regional Revenue vs Gross Profit ranking
+- Margin vs YoY growth
+- Regional Budget Performance
+- AI-generated Regional context
 
 ---
 
-### Regional & Product Intelligence  
-**What is driving growth and profitability?**
+### Performance vs Plan  
+**Where are we missing or beating expectations?**
 
-![Regional and Product Intelligence](images/regional_product_analysis.png)
+![Performance vs Plan](/images/03_performance_vs_plan.png)
 
-- Revenue vs Margin scatter
-- Regional growth ranking
-- Profit contribution analysis
-- Margin erosion detection
+- Actual vs Budget Revenue Monthly trend
+- Actual vs Budget Revenue by Region
+- Actual vs Budget Revenue by Category
+- Root cause analysis - what accounts for the budget variance
+
+---
+
+### Product Performance
+**Which products actually make money?**
+
+![Product Performance](/images/04_product_performance.png)
+
+- Product ranking: units sold, YoY Growth, Revenue, Gross Profit Margin %
+- Gross Profit Margin % vs Revenue, by Category
+- Gross Profit Margin % distribution by Category
+- Revenue and Gross Profit trend analysis
 
 ---
 
 ### Customer Value & Segmentation  
 **Who actually drives the business?**
 
-![Customer Segmentation](images/customer_segmentation.png)
+![Customer Segmentation](/images/05_customer_value.png)
 
-- High-value customer identification
 - Average revenue per customer
-- Segment-level contribution
-- Demographic overlays
+- Comparison of Orders by customer priority
+- Comparison of Orders by education category
+- Monthly trend of Active customers vs average revenue per customer
+- Top 50 customers
 
 ---
 
 ### Cohort & Retention Analysis  
 **Are customers staying â€” and why?**
 
-![Cohort Analysis](images/cohort_analysis.png)
+![Cohort Analysis](/images/06_cohort_analysis.png)
 
 - Monthly cohort matrix
-- Retention decay curve
-- Category-level retention
-- Guardrailed Month-0 baseline
+- Customer Retention (new, returing & recovered) by month
+- Cohort revenue trends by month
 
 Cohort logic is pre-aggregated in SQL for performance and integrity.
 
 ---
 
 ### AI Executive Brief  
-**Tell me the story.**
+**Tell me the story - what do I need to know and act on?**
 
-![AI Executive Brief](images/ai_executive_brief.png)
+![AI Executive Brief](/images/07_ai_executive_brief.png)
 
-- KPI movement explanation
-- Variance drivers
-- Risk and opportunity flags
-- Narrative aligned with governed measures
+- KPI (performance against benchmarks)
+- AI Generated Insights (signal, diagnosis, implication and recommended actions)
+- Natural language query and answer
 
 ---
 
@@ -192,13 +204,16 @@ Most importantly, it demonstrates how analytics should scale with the business â
 ### 1. Database Setup
 - Restore AdventureWorksDW2022
 - Execute SQL scripts in `/sql` directory
-  - Fact and dimension views
-  - Cohort base table
-  - Retention cube view
+  - create_cleaned_DimCustomer_view
+  - create_cleaned_DimDate_view
+  - create_cleaned_DimProduct_view
+  - create_cleaned_DimSalesTerritory_view
+  - create_cleaned_FactInternetSales_view
+  - create_cube_customer_cohort_view
 
 ### 2. Budget Integration
 - Load budget Excel file into staging table
-- Create `vw_FactBudget`
+- Create `vw_FactInternetSalesTarget`
 
 ### 3. Power BI
 - Open `.pbix` file
