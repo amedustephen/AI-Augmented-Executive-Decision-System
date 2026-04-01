@@ -115,7 +115,7 @@ Each page answers a single executive question.
 ### Performance vs Plan  
 **Where are we missing or beating expectations?**
 
-![Performance vs Plan](https://github.com/amedustephen/AI-Augmented-Executive-Decision-System/blob/main/images/03_performance_vs_plan.png)
+![Performance vs Plan](https://github.com/amedustephen/AI-Augmented-Executive-Decision-System/blob/main/images/03_performance_vs_plan.PNG)
 
 - Actual vs Budget Revenue Monthly trend
 - Actual vs Budget Revenue by Region
@@ -127,7 +127,7 @@ Each page answers a single executive question.
 ### Product Performance
 **Which products actually make money?**
 
-![Product Performance]([/images](https://github.com/amedustephen/AI-Augmented-Executive-Decision-System/blob/main/images/04_product_performance.png)
+![Product Performance]([/images](https://github.com/amedustephen/AI-Augmented-Executive-Decision-System/blob/main/images/04_product_performance.PNG)
 
 - Product ranking: units sold, YoY Growth, Revenue, Gross Profit Margin %
 - Gross Profit Margin % vs Revenue, by Category
@@ -139,7 +139,7 @@ Each page answers a single executive question.
 ### Customer Value & Segmentation  
 **Who actually drives the business?**
 
-![Customer Segmentation](https://github.com/amedustephen/AI-Augmented-Executive-Decision-System/blob/main/images/05_customer_value.png)
+![Customer Segmentation](https://github.com/amedustephen/AI-Augmented-Executive-Decision-System/blob/main/images/05_customer_value.PNG)
 
 - Average revenue per customer
 - Comparison of Orders by customer priority
@@ -152,7 +152,7 @@ Each page answers a single executive question.
 ### Cohort & Retention Analysis  
 **Are customers staying — and why?**
 
-![Cohort Analysis](https://github.com/amedustephen/AI-Augmented-Executive-Decision-System/blob/main/images/06_cohort_analysis.png)
+![Cohort Analysis](https://github.com/amedustephen/AI-Augmented-Executive-Decision-System/blob/main/images/06_cohort_analysis.PNG)
 
 - Monthly cohort matrix
 - Customer Retention (new, returing & recovered) by month
@@ -165,7 +165,7 @@ Cohort logic is pre-aggregated in SQL for performance and integrity.
 ### AI Executive Brief  
 **Tell me the story - what do I need to know and act on?**
 
-![AI Executive Brief](https://github.com/amedustephen/AI-Augmented-Executive-Decision-System/blob/main/images/07_ai_executive_brief.png)
+![AI Executive Brief](https://github.com/amedustephen/AI-Augmented-Executive-Decision-System/blob/main/images/07_ai_executive_brief.PNG)
 
 - KPI (performance against benchmarks)
 - AI Generated Insights (signal, diagnosis, implication and recommended actions)
