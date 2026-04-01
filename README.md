@@ -90,7 +90,7 @@ Each page answers a single executive question.
 ### Executive Summary  
 **What is happening right now?**
 
-![Executive Summary](/images/01_executive_dashboard.png)
+![Executive Summary](https://github.com/amedustephen/AI-Augmented-Executive-Decision-System/blob/main/images/01_executive_dashboard.PNG)
 
 - Revenue, Profit, Margin, Orders
 - Budget vs Actual
